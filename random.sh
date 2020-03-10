@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-for i in {1..100}
+for i in {1..50}
 do
 	echo "writing $i file"
-	head -c 100KB /dev/random > "$i".py
+	head -c 1024KB /dev/random > "$i".gc
 done
 
