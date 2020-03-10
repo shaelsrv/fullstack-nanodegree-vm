@@ -6,6 +6,6 @@ do
 	echo "writing $i file"
 	name= head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13 ; echo ''
 	echo $name
-	head -c 1024KB /dev/random > $name.java
+	head -c 1024KB /dev/random > "$i""$name".java
 done
 
